@@ -1,0 +1,65 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.skill-Heading{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    padding-top: 6rem;
+}
+.skill-text{
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    color:white;
+    font-weight: 600;
+    margin-top: 2rem;
+    padding-left: 1.2rem;
+}
+.skill-sec1{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding-left: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+   width: 90%;
+   color: white;
+   font-size: 1.3rem;
+   flex-wrap: wrap;
+   gap: 3rem;
+ 
+
+}
+.skill1 {
+    /* height: 4rem;
+    width:11rem;
+    background: #000;
+    border-radius: .3rem; */
+
+ 
+}
+.react-img{
+    height: 4rem;
+    width: 11rem;
+    border-radius: .3rem;
+    box-shadow: 2.95px 2.95px 2.6px rgb(247, 246, 246);
+}
+.skill-sec2{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-left: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+   width: 90%;
+   color: white;
+   font-size: 1.3rem;
+   flex-wrap: wrap;
+   gap: 3rem;
+}
+
