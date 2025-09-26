@@ -1,65 +1,76 @@
-.Project-heading{
+.Project-heading {
     display: flex;
     justify-content: center;
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
-    
-    padding-top: 6rem;
+    padding-top: 4.2rem;
+    text-align: center; 
 }
-.project-text{
+
+.project-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 1.5rem;
-    color: white;
-    /* font-size: 1.rem; */
-    font-weight: 600;
-    padding-left: 1.2rem;
+    padding-top: .5rem;
+    color: #cbd5e1;
+    font-weight: 500;
+    padding-left: 1rem;
+    text-align: center;
 }
-#project-text{
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
-font-weight: 600;
-flex-wrap: wrap;
-padding-left: 1.2rem;
 
+#project-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cbd5e1;
+    font-weight: 500;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    text-align: center;
 }
-.project-img{
+
+.project-img {
     display: flex;
     justify-content: space-around;
-    padding-top: 4rem;
-    
+    padding-top: 1rem;
     flex-wrap: wrap;
+    gap: 2rem; 
+    margin-top: 1rem;
+}
 
-}
-.project-img1{
-    height: 15rem;
+/* Cards */
+.project-img1,
+.project-img3 {
+    height: 14.2rem;
     width: 18rem;
+    padding: 1px;
     background-color: rgb(19, 17, 17);
     border-radius: 9px;
     box-shadow: 2px 2px 19px rgb(8, 17, 8);
     margin-bottom: 2.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.project-img2 {
+    height: 14rem;
+    width: fit-content;
+  padding: 5px;
+    background-size: cover ;
     
-}
-.project-img2{
-    height: rem;
-    width: 18rem;
-    background-color: rgb(19, 16, 16);
     border-radius: 9px;
     box-shadow: 2px 2px 19px rgb(8, 17, 8);
     margin-bottom: 2.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
 }
-.project-img3{
-    height: 15rem;
-    width: 18rem;
-    background-color: rgb(19, 17, 17);
-    border-radius: 9px;
-    box-shadow: 2px 2px 19px rgb(8, 17, 8)
-}
-.Project-text{
+
+.Project-text {
     color: aliceblue;
     padding: 5px;
     display: flex;
@@ -67,8 +78,63 @@ padding-left: 1.2rem;
     justify-content: center;
     margin-top: 1rem;
 }
-.pro2-img{
+
+.pro2-img {
     height: 15rem;
     width: 18rem;
     border-radius: 5px;
+    object-fit: cover;
+}
+
+/* ---------- Responsive for mobile ---------- */
+@media (max-width: 768px) {
+    .Project-heading {
+        font-size: 1.5rem;
+        padding-top: 4rem;
+    }
+
+    .project-text,
+    #project-text {
+        font-size: 1rem;
+        padding-left: 0;
+        padding-right: 0.5rem;
+    }
+
+    .project-img {
+        flex-direction: column; /* stack cards */
+        align-items: center;
+        gap: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    .project-img1,
+    .project-img3,
+    .pro2-img {
+        width: 70%;      /* make cards shrink to screen */
+        height: 60%;    /* auto height for images */
+    }
+    .project-img2{
+        width: 70%;      /* make cards shrink to screen */
+        height: 20rem;    /* auto height for images */
+        margin-bottom: 0;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .Project-heading {
+        font-size: 1.3rem;
+    }
+
+    .project-text,
+    #project-text {
+        font-size: 0.9rem;
+    }
+
+    .project-img1,
+    .project-img2,
+    .project-img3,
+    .pro2-img {
+        width: 100%;
+    }
 }

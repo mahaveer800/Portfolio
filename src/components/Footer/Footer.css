@@ -1,78 +1,94 @@
 .footer {
-    background-color: #1a1a1a;
-    color: yellow;
-    padding: 40px 20px;
-    text-align: center;
-    margin-top: 2rem;
-    height: 14rem;
-  }
-  
-  .footer-container {
-    max-width: 1000px;
-    margin: auto;
-  }
-  
+  background-image: linear-gradient(90deg,#485055 0 ,rgba(33, 70, 138, 0.192));
+    padding: 20px;
+  text-align: center;
+  margin-top: .1rem;
+  height: auto; 
+}
+
+.footer-container {
+  max-width: 100%;
+  margin: auto;
+}
+.footer-socials {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* allow wrapping */
+}
+
+.footer-socials a {
+  color: rgb(86, 143, 201);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #00bcd4;
+}
+
+.footer-copy {
+  font-size: 15px;
+  color: #f0eff7a4;
+  margin-top: 20px;
+}
+
+#wh {
+  color: forestgreen;
+  font-size: 2rem;
+}
+
+#in {
+  color: red;
+  font-size: 2rem;
+}
+
+#sn {
+  color: yellow;
+  font-size: 2rem;
+}
+
+/* ------------ Responsive rules -------------- */
+@media (max-width: 768px) {
+ 
   .footer-logo {
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-size: 3rem;
-    font-weight: 700;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
   }
-  .footer-heading{
-    font-size: 1.4rem;
+
+  .footer-heading {
+    font-size: 1.6rem;
   }
-  .footer-nav {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  .footer-nav a {
-    color: #d44141;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-nav a:hover {
-    color: #00bcd4;
-  }
-  
+
+  /* .footer-nav {
+  font-size: 3rem;
+    gap: 10px;
+  } */
+
   .footer-socials {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: row; 
+    gap: 40px;
   }
-  
-  .footer-socials a {
-    color: #f0f0f0;
-    text-decoration: none;
-    transition: color 0.3s ease;
+
+  #wh, #in, #sn {
+    font-size: 2rem; 
   }
-  
-  .footer-socials a:hover {
-    color: #00bcd4;
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+    font-size: 1.8rem;
   }
-  
+
+  .footer-heading {
+    font-size: 1rem;
+  }
+
   .footer-copy {
-    font-size: 14px;
-    color: #999;
-    margin-top: 20px;
+    font-size: 12px;
   }
-  #wh{
-    color: forestgreen;
-    font-size: 2rem;
+
+  #wh, #in, #sn {
+    font-size: 1.3rem;
   }
-  #in{
-    color: red;
-    font-size: 2rem;
-  }
-  #sn{
-    color: yellow;
-    font-size: 2rem;
-  }
-  
+}

@@ -1,65 +1,98 @@
-*{
+* {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    box-sizing: border-box; /* good for layouts */
 }
-.skill-Heading{
+
+/* heading */
+.skill-Heading {
     display: flex;
     justify-content: center;
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
-    padding-top: 6rem;
+    padding-top: 4.2rem;
+    text-align: center; /* helpful on mobile */
 }
-.skill-text{
+
+.skill-text {
     display: flex;
     justify-content: center;
-    font-size: 1.1rem;
-    color:white;
-    font-weight: 600;
-    margin-top: 2rem;
+    font-size: 1rem;
+    color: #cbd5e1;
+    font-weight: 500;
+    margin-top: .5rem;
     padding-left: 1.2rem;
+    text-align: center; /* mobile */
 }
-.skill-sec1{
+
+/* skill sections */
+.skill-sec1,
+.skill-sec2 {
     display: flex;
     justify-content: space-around;
     text-align: center;
     align-items: center;
     padding-left: 2rem;
     margin-left: 2rem;
-    margin-top: 2rem;
-   width: 90%;
-   color: white;
-   font-size: 1.3rem;
-   flex-wrap: wrap;
-   gap: 3rem;
- 
-
+    margin-top: 1rem;
+    width: 90%;
+    color: white;
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+    
 }
+
+/* skill cards */
 .skill1 {
-    /* height: 4rem;
-    width:11rem;
-    background: #000;
-    border-radius: .3rem; */
-
- 
+    /* you can style each skill card here */
 }
-.react-img{
+
+.react-img {
     height: 4rem;
     width: 11rem;
     border-radius: .3rem;
     box-shadow: 2.95px 2.95px 2.6px rgb(247, 246, 246);
 }
-.skill-sec2{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding-left: 2rem;
-    margin-left: 2rem;
-    margin-top: 2rem;
-   width: 90%;
-   color: white;
-   font-size: 1.3rem;
-   flex-wrap: wrap;
-   gap: 3rem;
+
+/* --------- Responsive rules for mobile ---------- */
+@media (max-width: 768px) {
+    .skill-Heading {
+        font-size: 1.6rem;
+        padding-top: 2rem;
+    }
+
+    .skill-text {
+        font-size: .9rem;
+    }
+
+    .skill-sec1,
+    .skill-sec2 {
+        flex-direction: column;   /* stack items vertically */
+        text-align: center;
+        margin-right: 4rem;
+        width: 40rem;
+        gap: 1.5rem;
+    }
+
+    .react-img {
+        width: 20rem;   /* smaller images */
+        height: 8rem;
+    }
 }
 
+/* Extra small devices */
+@media (max-width: 480px) {
+    .skill-Heading {
+        font-size: 1.3rem;
+    }
+
+    .skill-text {
+        font-size: 0.9rem;
+    }
+
+    .react-img {
+        width: 7rem;
+        height: 3rem;
+    }
+}

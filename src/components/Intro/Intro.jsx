@@ -1,6 +1,6 @@
 import React from 'react'
 import './Intro.css';
-import Image from "../../assets/second.png"
+import Image from "../../assets/my-pick.png"
 
 const Intro = () => {
   return (
@@ -20,9 +20,17 @@ const Intro = () => {
 
             <section id='btn'>
     <button className="hire">Hire me</button>
-     <button className="resume">Resume
-     <i class="fa-solid fa-arrow-down"></i>
-     </button>
+    <a
+  href="resume.pdf"
+  download="Mahaveer_Singh_Resume.pdf"  
+>
+  <button className="resume">
+    Resume
+    <i className="fa-solid fa-arrow-down"></i>
+  </button>
+</a>
+
+
      </section>
         </section>
     </div>

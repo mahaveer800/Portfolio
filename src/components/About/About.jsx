@@ -16,11 +16,11 @@ const About = () => {
       </div>
       <div className="Education transform transition-transform duration-500 hover:scale-110">
         <h1>Education</h1>
-         <h3>BCA - Bachelor of <br/>Computer Applications</h3>
+         <h3>BCA - Bachelor of <br/>Computer Applications from MJP Rohilkhand Universty cdBareilly</h3>
       </div>
-      <div className="Project transform transition-transform duration-500 hover:scale-110">
+      <div className="Project transform transition-transform duration-500 hover:scale-110 ">
         <h1>Projects</h1>
-        <h3>Built more than 5 Projects</h3>
+        <h3> Chatbot using by gemini API Built more than 5 Projects</h3>
       </div>
      </section>
 

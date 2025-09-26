@@ -1,33 +1,51 @@
-import React from 'react'
- import './Navbar.css';
- import { Link } from 'react-scroll';
- import Image from "../../assets/image1.png";
+import React, { useState } from "react";
+import { Link } from "react-scroll";
+import "./Navbar.css";
 
- const Navbar = () => {
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-     <>
-     <div className="nav pt-4 ">
-      <div className="img">Ms.
-         <span className='logo-heading'>Portfolio</span>
-       </div>
-       <div className="navbar">
-       <Link to="section1"  smooth={true} duration={500}>Home</Link>
-       <Link to="section2" smooth={true} duration={500}>About</Link>
-       <Link to="section3" smooth={true} duration={500}>Skill</Link>
-       <Link to="section4" smooth={true} duration={500}>Project</Link>
+    <>
+      <div className=" nav ">
+        {/* Logo */}
+     <div className="text-6xl font-bold">
+  p<span className="align-sub text-blue-600 text-3xl">ortfolio</span>
+</div>
+        <div className="navbar hidden md:flex gap-6 font-medium">
+          <Link to="section1" smooth={true} duration={500} className="cursor-pointer hover:text-blue-600">Home</Link>
+          <Link to="section2" smooth={true} duration={500} className="cursor-pointer hover:text-blue-600">About</Link>
+          <Link to="section3" smooth={true} duration={500} className="cursor-pointer hover:text-blue-600">Skill</Link>
+          <Link to="section4" smooth={true} duration={500} className="cursor-pointer hover:text-blue-600">Project</Link>
+        </div>
+
+        <div className="flex items-center gap-4">
+          {/* Contact Image */}
+          
+
+          {/* Hamburger menu - mobile */}
+          <div className="md:hidden flex items-center mr-4 pr-4">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-800 text-2xl focus:outline-none"
+            >
+                         {isOpen ? "✖" : "☰"}
+            </button>
+          </div>
+        </div>
       </div>
-      <div className="contect">
-       <button className="contact-button">
-         <img src={Image} className='rounded-full h-16'/>
-       </button>
-       </div>
-     </div>
-    
-     </>
-   )
-}
 
- export default Navbar
+  
+      {isOpen && (
+        <div className="md:hidden bg-gray-100 shadow-md flex flex-col items-center gap-4 py-4 animate-fadeIn">
+          <Link to="section1" smooth={true} duration={500} className="cursor-pointer hover:text-blue-600" onClick={() => setIsOpen(false)}>Home</Link>
+          <Link to="section2" smooth={true} duration={500} className="cursor-pointer hover:text-blue-600" onClick={() => setIsOpen(false)}>About</Link>
+          <Link to="section3" smooth={true} duration={500} className="cursor-pointer hover:text-blue-600" onClick={() => setIsOpen(false)}>Skill</Link>
+          <Link to="section4" smooth={true} duration={500} className="cursor-pointer hover:text-blue-600" onClick={() => setIsOpen(false)}>Project</Link>
+        </div>
+      )}
+    </>
+  );
+};
 
-
- 
+export default Navbar;

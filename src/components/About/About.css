@@ -1,94 +1,122 @@
-.heading{
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 600;
-    
-    padding-top: 6rem;
-  
-
-}
-.About-Text{
-    font-size: 1.1rem;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 3rem;
-    font-weight: 600;
-    padding-left: 1.2rem;
-}
-#textPara{
-    display: flex;
-    justify-content: center;
-}
-.about-img{
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
-    margin-top: 3rem;
-    flex-wrap: wrap;
-}
-.language{
-    height: 10rem;
-    width: 13rem;
-    background-color:rgb(19, 18, 18);
-    border-radius: .5rem;
-    box-shadow: 1.95px 1.95px 2.6px #ff0;
-    
-}
-.language{
-    color: white;
-    padding-left: .5rem;
-}
-.language h1{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    font-size: 1.8rem;
-    font-weight: 700;
-    padding-bottom: 1rem;
-}
-.Education{
-        height: 10rem;
-        width: 13rem;
-        background-color:rgb(19, 18, 18);
-        border-radius: .5rem;
-        box-shadow: 1.95px 1.95px 2.6px #ff0;
+.heading {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  padding-top: 4.2rem;
+  text-align: center; 
 }
 
-.Education{
-    color: white;
-    padding-left: .5rem;
+.About-Text {
+  font-size: 1rem;
+  color: #cbd5e1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  font-weight: 500;
+  padding-left: 1.2rem;
+  text-align: center;
 }
-.Education h1{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    font-size: 1.8rem;
-    font-weight: 700;
-    padding-bottom: 1rem;
+
+#textPara {
+  display: flex;
+  justify-content: center;
 }
-.Project{
-    height: 10rem;
-    width: 13rem;
-    background-color: rgb(19, 18, 18);
-    border-radius: .5rem;
-    box-shadow: 1.95px 1.95px 2.6px #ff0;
-    
+
+.about-img {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem; /* cards ke beech spacing */
 }
-.Project{
-    color: white;
-    padding-left: .5rem;
-flex-wrap: wrap;
-margin-top: 2rem;
+
+.language,
+.Education,
+.Project {
+  height: 15rem;
+  width: 20rem;
+  background-color: rgb(19, 18, 18);
+  border-radius: .5rem;
+  box-shadow: 1.95px 1.95px 2.6px rgb(53, 53, 107);
+  color: #cbd5e1;
+  text-align: center;
+  padding: 1rem;
 }
-.Project h1{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    font-size: 1.8rem;
-    font-weight: 700;
-    padding-bottom: 1rem;
+
+.language h1,
+.Education h1,
+.Project h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  color: #392cac;
+}
+
+/* ------- Responsive part --------- */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.5rem;
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .About-Text {
+    font-size: 0.9rem;
+    margin: 10px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .about-img {
+    flex-direction: column; /* cards vertically */
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .language,
+  .Education,
+  .Project {
+    width: 80%;  /* card ki width full screen */
+    height: auto; /* height auto so text fit */
+    margin: .5rem 0;
+    text-align: center;
+  }
+
+  .language h1,
+  .Education h1,
+  .Project h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.3rem;
+    padding-top: 3rem;
+  }
+
+  .language h1,
+  .Education h1,
+  .Project h1 {
+    font-size: 1.2rem;
+  }
+
+  .About-Text {
+    font-size: 0.7rem;
+    margin: 5px;
+  }
+
+  .language,
+  .Education,
+  .Project {
+    width: 95%; /* take full width on very small screens */
+  }
 }
