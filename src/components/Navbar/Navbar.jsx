@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className=" nav ">
         {/* Logo */}
      <div className="text-6xl font-bold">
-  p<span className="align-sub text-blue-600 text-3xl">ortfolio</span>
+  p<span className="align-sub text-blue-800 text-3xl">ortfolio</span>
 </div>
         <div className="navbar hidden md:flex gap-6 font-medium">
           <Link to="section1" smooth={true} duration={500} className="cursor-pointer hover:text-blue-600">Home</Link>
@@ -24,10 +24,10 @@ const Navbar = () => {
           
 
           {/* Hamburger menu - mobile */}
-          <div className="md:hidden flex items-center mr-4 pr-4">
+          <div className="md:hidden flex items-center mr-4 pr-4 ">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-800 text-2xl focus:outline-none"
+              className="text-blue-900 text-2xl focus:outline-none"
             >
                          {isOpen ? "✖" : "☰"}
             </button>

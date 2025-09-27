@@ -101,6 +101,7 @@
   .heading {
     font-size: 1.3rem;
     padding-top: 3rem;
+    width: 42rem;
   }
 
   .language h1,
@@ -112,11 +113,16 @@
   .About-Text {
     font-size: 0.7rem;
     margin: 5px;
+    width: 42rem;
   }
 
   .language,
   .Education,
   .Project {
-    width: 95%; /* take full width on very small screens */
+    width: 38rem;
+    height: 15rem;
+    margin-left: 2rem;
+
+     /* take full width on very small screens */
   }
 }

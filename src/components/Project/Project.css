@@ -4,7 +4,7 @@
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
-    padding-top: 4.2rem;
+    padding-top: 2.5rem;
     text-align: center; 
 }
 
@@ -124,17 +124,23 @@
 @media (max-width: 480px) {
     .Project-heading {
         font-size: 1.3rem;
+        width: 42rem;
+        margin-top: -19rem;
+
     }
 
     .project-text,
     #project-text {
         font-size: 0.9rem;
+        width: 42rem;
     }
 
     .project-img1,
     .project-img2,
     .project-img3,
     .pro2-img {
-        width: 100%;
+        width: 36rem;
+        margin: 2.5rem;
+        
     }
 }

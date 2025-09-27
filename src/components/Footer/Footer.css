@@ -76,6 +76,10 @@
 }
 
 @media (max-width: 480px) {
+
+  .footer{
+    width: 41.9rem;
+  }
   .footer-logo {
     font-size: 1.8rem;
   }

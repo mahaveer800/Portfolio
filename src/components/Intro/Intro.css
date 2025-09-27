@@ -121,7 +121,7 @@ background-color: #334155;
   #Intro-para,
   #introPara {
     font-size: 0.9rem;
-    padding: 0 1rem;
+    padding-left:2rem;
   }
   .resume {
        background-color: #b0c1d8;
@@ -133,6 +133,10 @@ background-color: #334155;
   .Intro-Image img {
     height: 150px;
     width: 150px;
+  }
+  .intro{
+    width: 42rem;
+    padding-left: rem;
   }
 }
 
